@@ -1,0 +1,14 @@
+build:
+  gpu: false
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_version: "3.11"
+  python_packages:
+    - "torch==2.8.0"
+    - "torchvision==0.23.0"
+    - "transformers==4.55.0"
+    - "Pillow==11.3.0"
+    - "numpy==2.3.2"
+
+predict: "predict.py:Predictor"
